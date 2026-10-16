@@ -1,0 +1,98 @@
+:root { color-scheme: light dark; }
+html { scroll-behavior: auto; }
+body { margin: 0; background: light-dark(#ffffff, #14181e); }
+a, button, summary { cursor: pointer; }
+a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px solid currentColor; outline-offset: 5px; }
+
+  #tiranasi-homepage {
+    --hp-page: light-dark(#ffffff, #14181e);
+    --hp-ink: light-dark(#202938, #edf1f6);
+    --hp-copy: light-dark(#465365, #bac5d3);
+    --hp-quiet: light-dark(#657184, #a4b0c0);
+    --hp-line: light-dark(#e4e8ee, #303946);
+    --hp-accent: light-dark(#315a8b, #a2c4f2);
+    --hp-soft: light-dark(#f3f5f8, #202833);
+    color: var(--hp-ink); background: var(--hp-page);
+    font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    font-size: 15px; line-height: 1.65; width: 100%;
+  }
+  #tiranasi-homepage * { box-sizing: border-box; }
+  #tiranasi-homepage h1, #tiranasi-homepage h2, #tiranasi-homepage h3,
+  #tiranasi-homepage p, #tiranasi-homepage ul { margin: 0; }
+  #tiranasi-homepage a { color: var(--hp-accent); text-decoration: none; }
+  #tiranasi-homepage a:hover { text-decoration: underline; text-underline-offset: 4px; }
+  #tiranasi-homepage button, #tiranasi-homepage summary { font: inherit; }
+  #tiranasi-homepage .hp-inner { max-width: 936px; padding: 0 38px; margin: auto; }
+  #tiranasi-homepage .hp-nav { display: flex; gap: 20px; align-items: center; justify-content: space-between; padding: 21px 0; border-bottom: 1px solid var(--hp-line); }
+  #tiranasi-homepage .hp-wordmark { font-size: 13px; letter-spacing: .12em; font-weight: 500; }
+  #tiranasi-homepage .hp-navlinks { display: flex; gap: 21px; align-items: center; flex-wrap: wrap; font-size: 13px; }
+  #tiranasi-homepage .hp-navlinks a { color: var(--hp-copy); }
+  #tiranasi-homepage .hp-language { background: var(--hp-page); color: var(--hp-ink); border: 1px solid var(--hp-line); padding: 4px 10px; border-radius: 4px; }
+  #tiranasi-homepage .hp-hero { padding: 42px 0 37px; display: grid; grid-template-columns: minmax(0, 1fr) 158px; gap: 55px; align-items: center; }
+  #tiranasi-homepage .hp-kicker { color: var(--hp-quiet); font-size: 12px; letter-spacing: .035em; }
+  #tiranasi-homepage h1 { font-size: 37px; line-height: 1.2; font-weight: 500; letter-spacing: -.035em; margin: 7px 0 18px; }
+  #tiranasi-homepage .hp-bio { color: var(--hp-copy); max-width: 610px; }
+  #tiranasi-homepage .hp-links { display: flex; gap: 18px; flex-wrap: wrap; margin-top: 18px; font-size: 13px; align-items: center; }
+  #tiranasi-homepage .hp-photo { display: block; width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: contain; border-radius: 5px; background: var(--hp-soft); }
+  #tiranasi-homepage .hp-interest { border-top: 1px solid var(--hp-line); padding: 15px 0; font-size: 12px; display: flex; gap: 24px; align-items: baseline; }
+  #tiranasi-homepage .hp-interest > span:first-child { flex: 0 0 135px; color: var(--hp-quiet); }
+  #tiranasi-homepage .hp-interest > span:last-child { color: var(--hp-copy); }
+  #tiranasi-homepage section { border-top: 1px solid var(--hp-line); padding: 29px 0; scroll-margin-top: 12px; }
+  #tiranasi-homepage .hp-sectionhead { display: flex; justify-content: space-between; gap: 18px; align-items: baseline; margin-bottom: 18px; flex-wrap: wrap; }
+  #tiranasi-homepage h2 { font-size: 21px; font-weight: 500; letter-spacing: -.025em; }
+  #tiranasi-homepage .hp-sectionnote { color: var(--hp-quiet); font-size: 12px; }
+  #tiranasi-homepage h3 { font-size: 17px; line-height: 1.45; font-weight: 500; margin-bottom: 8px; }
+  #tiranasi-homepage .hp-researchcopy { color: var(--hp-copy); }
+  #tiranasi-homepage .hp-focus { color: var(--hp-copy); padding-left: 19px; margin-top: 12px; font-size: 13px; }
+  #tiranasi-homepage .hp-looplabel { font-size: 11px; color: var(--hp-quiet); margin-top: 17px; }
+  #tiranasi-homepage .hp-loop { display: flex; flex-wrap: wrap; align-items: center; column-gap: 13px; row-gap: 8px; margin-top: 7px; font-size: 12px; color: var(--hp-copy); }
+  #tiranasi-homepage .hp-loop span { padding: 6px 10px; background: var(--hp-soft); border-radius: 3px; }
+  #tiranasi-homepage .hp-loop b { font-weight: 400; color: var(--hp-quiet); }
+  #tiranasi-homepage .hp-project { display: grid; grid-template-columns: 234px minmax(0, 1fr); gap: 28px; align-items: start; padding: 6px 0 21px; }
+  #tiranasi-homepage .hp-project + .hp-project { border-top: 1px solid var(--hp-line); padding-top: 22px; padding-bottom: 3px; }
+  #tiranasi-homepage .hp-media { min-height: 164px; padding: 23px; border-radius: 4px; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 6px; }
+  #tiranasi-homepage .hp-media-sky { background: light-dark(#edf3ef, #1c2b25); color: light-dark(#385d49, #b6d6c0); }
+  #tiranasi-homepage .hp-media-typhoon { background: light-dark(#edf2f8, #202b39); color: light-dark(#395b84, #b7ceed); }
+  #tiranasi-homepage .hp-media-name { font-family: Georgia, serif; font-size: 26px; line-height: 1.25; }
+  #tiranasi-homepage .hp-media-caption { font-size: 11px; }
+  #tiranasi-homepage .hp-media-features { font-size: 11px; margin-top: 15px; }
+  #tiranasi-homepage .hp-project p { color: var(--hp-copy); font-size: 13px; }
+  #tiranasi-homepage .hp-tags { display: flex; gap: 5px 13px; flex-wrap: wrap; margin-top: 11px; font-size: 11px; color: var(--hp-quiet); }
+  #tiranasi-homepage .hp-project-actions { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 12px; font-size: 12px; align-items: flex-start; }
+  #tiranasi-homepage details { font-size: 12px; color: var(--hp-copy); }
+  #tiranasi-homepage summary { color: var(--hp-accent); width: fit-content; }
+  #tiranasi-homepage .hp-details { border-left: 2px solid var(--hp-line); padding-left: 12px; margin-top: 9px; max-width: 470px; }
+  #tiranasi-homepage .hp-details p + p { margin-top: 7px; }
+  #tiranasi-homepage .hp-details p { font-size: 12px; }
+  #tiranasi-homepage .hp-education { display: flex; justify-content: space-between; gap: 18px; flex-wrap: wrap; color: var(--hp-copy); font-size: 13px; }
+  #tiranasi-homepage .hp-education strong { color: var(--hp-ink); font-weight: 500; }
+  #tiranasi-homepage .hp-education-dates { color: var(--hp-quiet); font-size: 12px; margin-top: 3px; }
+  #tiranasi-homepage .hp-contact a { overflow-wrap: anywhere; }
+  #tiranasi-homepage .hp-contact p { color: var(--hp-copy); font-size: 13px; max-width: 660px; }
+  #tiranasi-homepage .hp-footer { border-top: 1px solid var(--hp-line); padding: 15px 0 23px; display: flex; gap: 14px; justify-content: space-between; flex-wrap: wrap; font-size: 11px; color: var(--hp-quiet); }
+  #tiranasi-homepage .hp-announce { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+  @media (max-width: 690px) {
+    #tiranasi-homepage .hp-inner { padding: 0 24px; }
+    #tiranasi-homepage .hp-hero { gap: 27px; grid-template-columns: minmax(0,1fr) 120px; padding-top: 31px; }
+    #tiranasi-homepage h1 { font-size: 31px; }
+    #tiranasi-homepage .hp-project { grid-template-columns: 185px minmax(0,1fr); gap: 20px; }
+    #tiranasi-homepage .hp-media { padding: 18px; min-height: 160px; }
+    #tiranasi-homepage .hp-navlinks { gap: 12px; }
+  }
+  @media (max-width: 520px) {
+    #tiranasi-homepage .hp-inner { padding: 0 20px; }
+    #tiranasi-homepage .hp-nav { flex-wrap: wrap; gap: 9px; }
+    #tiranasi-homepage .hp-navlinks { width: 100%; justify-content: space-between; gap: 8px; }
+    #tiranasi-homepage .hp-hero { grid-template-columns: 1fr; gap: 21px; }
+    #tiranasi-homepage .hp-photo { width: 110px; grid-row: 1; }
+    #tiranasi-homepage .hp-project { grid-template-columns: 1fr; gap: 16px; }
+    #tiranasi-homepage .hp-media { min-height: 130px; }
+    #tiranasi-homepage .hp-interest { flex-direction: column; gap: 4px; }
+    #tiranasi-homepage .hp-interest > span:first-child { flex-basis: auto; }
+    #tiranasi-homepage .hp-sectionhead { gap: 5px; }
+  }
+  @media (pointer: coarse) {
+    #tiranasi-homepage .hp-navlinks a, #tiranasi-homepage .hp-language,
+    #tiranasi-homepage summary, #tiranasi-homepage .hp-links a,
+    #tiranasi-homepage .hp-project-actions > a { min-height: 44px; display: inline-flex; align-items: center; }
+  }

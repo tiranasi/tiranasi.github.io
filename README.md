@@ -29,6 +29,8 @@ python -m http.server 8000
 
 替换照片时可覆盖 `assets/profile.jpg`；若照片比例发生变化，同时调整图片的宽高属性和 `.hp-photo` 样式。
 
+修改 `assets/styles.css` 后，同步更新 `index.html` 中样式表链接的 `v` 参数，避免浏览器继续使用旧版样式缓存。EEG 实验照片在桌面上宽 220 像素，窄屏上最多宽 280 像素，并保持完整比例。
+
 ## 部署
 
 - 线上地址：<https://tiranasi.github.io/>

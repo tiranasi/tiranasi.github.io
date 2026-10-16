@@ -43,6 +43,10 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
   #tiranasi-homepage .hp-sectionnote { color: var(--hp-quiet); font-size: 12px; }
   #tiranasi-homepage h3 { font-size: 17px; line-height: 1.45; font-weight: 500; margin-bottom: 8px; }
   #tiranasi-homepage .hp-researchcopy { color: var(--hp-copy); }
+  #tiranasi-homepage .hp-research-layout { display: grid; grid-template-columns: minmax(0, 1fr) 220px; gap: 32px; align-items: start; }
+  #tiranasi-homepage .hp-research-figure { margin: 0; }
+  #tiranasi-homepage .hp-research-figure img { display: block; width: 100%; height: auto; border-radius: 4px; background: var(--hp-soft); }
+  #tiranasi-homepage .hp-research-figure figcaption { margin-top: 8px; color: var(--hp-quiet); font-size: 11px; line-height: 1.5; }
   #tiranasi-homepage .hp-focus { color: var(--hp-copy); padding-left: 19px; margin-top: 12px; font-size: 13px; }
   #tiranasi-homepage .hp-looplabel { font-size: 11px; color: var(--hp-quiet); margin-top: 17px; }
   #tiranasi-homepage .hp-loop { display: flex; flex-wrap: wrap; align-items: center; column-gap: 13px; row-gap: 8px; margin-top: 7px; font-size: 12px; color: var(--hp-copy); }
@@ -75,6 +79,8 @@ a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px soli
     #tiranasi-homepage .hp-inner { padding: 0 24px; }
     #tiranasi-homepage .hp-hero { gap: 27px; grid-template-columns: minmax(0,1fr) 120px; padding-top: 31px; }
     #tiranasi-homepage h1 { font-size: 31px; }
+    #tiranasi-homepage .hp-research-layout { grid-template-columns: 1fr; gap: 22px; }
+    #tiranasi-homepage .hp-research-figure { width: 100%; max-width: 320px; }
     #tiranasi-homepage .hp-project { grid-template-columns: 185px minmax(0,1fr); gap: 20px; }
     #tiranasi-homepage .hp-media { padding: 18px; min-height: 160px; }
     #tiranasi-homepage .hp-navlinks { gap: 12px; }

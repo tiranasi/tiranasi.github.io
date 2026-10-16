@@ -8,6 +8,7 @@
 - `assets/styles.css`：排版、配色和移动端适配。
 - `assets/main.js`：中英文切换与页面内导航。
 - `assets/profile.jpg`：主页使用的照片。
+- `assets/eeg-robot.jpg`：EEG 研究部分的机器人抓取实验照片。
 - `assets/favicon.svg`：浏览器标签页图标。
 
 ## 本地打开
